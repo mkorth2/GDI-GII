@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.text-below {
+    text-align: center; 
+    display: flex;
+    align-items: center; 
+    height: 100px; 
+  }
+  .image-container {
+      text-align: center;
+    }
+
+    .centered-image {
+      display: inline-block;
+    }
+    .custom-div {
+      width: 100px; 
+      height: 600px;
+      background-color: lightblue;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+</style></style>
+</head>
+<body>
+
+
+    <!-- Navbar (-->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button"><b>Project ID: 2-29</b></a>
+      <div class="w3-right w3-hide-small">
+        <a href="ABOUT.html" class="w3-bar-item w3-button">About Members</a>
+        <a href="Data.html" class="w3-bar-item w3-button">Data Journey</a>
+        <a href="VIDEO.html" class="w3-bar-item w3-button">Demo Video</a>
+      </div>
+    </div>
+  </div>
+
+<div class="w3-container w3-padding-32" id="Learning and Conclusions">
+  <h1 style="text-align: center;" class="w3-border-bottom w3-border-light-grey w3-padding-16">Data journey and Caveats</h1>
+  <div class="image-container">
+    <img  src="DataPic.png" width="700" height="250" class = ".custom-div">
+
+  <h5 style="text-align: center;" class="w3-border-bottom w3-border-light-grey w3-padding-16">Matthew: </5>
+  </div class="text-below" >
+    <p style="text-align: center;" >The data journey started with finding a means of getting the data onto Google Colab. At first, we would have the excel download to the google colab page so that we could use pandas csv or xlsx open option. This was an annoying process to do and not easy for someone without the file to reproduce so we use Google Drive libraries to pull the data from a Google Drive link ID. We did this for the GDI, GDP, and country government type data. With the data we collected, we mostly didn’t need to do much cleaning or organizing besides removing unnecessary years and not available values. There was one case when trying to compare GDP and GDI over the years so we needed to melt the year columns into a row so that we could group by each year. Other than that, we just had to manipulate the data for the visualization. There were some cases of creating visualizations that were difficult to make work due to syntax. For example, it took a good amount of effort and understanding a new library to get the dual line/axis GDP and GDI over the years line graph. The hardest part of this project was setting up and learning how to program in HTML. I ended up using a template W3 School, an online coding help/training website. This gave me a structure and aesthetics to use to input our visualizations and information. Nonetheless, I still learned and edit the template to fit our project like having the images direct the uses to the visualizations</p>
+  </div>
+</div class="text-below" >
+<p style="text-align: center;" >W3 Template Link: https://www.w3schools.com/css/css_rwd_templates.asp</p>
+</div>
+
+<h5 style="text-align: center;" class="w3-border-bottom w3-border-light-grey w3-padding-16">Joyce: </5>
+</div class="text-below" >
+<p style="text-align: center;" >The first challenging part is to find the proper data source. We initially chose the CPIA gender equality rating, also a dataset from the United Nations, but it turns out to have so much unavailable data in the dataset. Fortunately, we were able to find UNDP data, which contains the gender inequality index for countries and also the gender development index. In the process of transferring original datasets to useful CSV files, it took time to clean the data, including the countries that have no data at all. When dealing with the gender inequality index for countries in 2021, it took effort to make meaningful visualizations. The final choices were made to present the data in terms of different regions. Such choices took another effort to add on the information of regions using another JSON data that includes geographic information of different countries in order to have continents information for the countries. Changes were made for the names of several countries that appeared in the CSV file in order to match that online JSON data, like changing “United States” to “United States of America.” This whole procedure took time since it first required an effort to test out which countries had different names in these separated data sources. Visualizations for scatterplots and choropleths were more of a time-consuming experience since they required attempts to test out which indicators were worth comparison and could generate meaningful conclusions. Besides, parallel coordinates plots were newly learned for comparing education and labor force participation. That turned out to be meaningful since it presented a clear image of males’ dominated advantage in labor force participation.</p>
+</div>
+
+
+
+</body>
+</html>
